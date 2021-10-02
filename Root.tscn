@@ -1,0 +1,86 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://scripts/Main.gd" type="Script" id=1]
+[ext_resource path="res://assets/sprites/resturaunt_basic.png" type="Texture" id=2]
+[ext_resource path="res://assets/sprites/dj_basic.png" type="Texture" id=3]
+[ext_resource path="res://scripts/Dancer.gd" type="Script" id=4]
+[ext_resource path="res://assets/sprites/speaker_basic.png" type="Texture" id=5]
+[ext_resource path="res://Speaker.gd" type="Script" id=6]
+[ext_resource path="res://assets/sprites/customer_basic.png" type="Texture" id=7]
+[ext_resource path="res://customer_basic2.gd" type="Script" id=8]
+[ext_resource path="res://assets/sprites/waiter_basic.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/chef_basic.png" type="Texture" id=10]
+[ext_resource path="res://chef_basic3.gd" type="Script" id=11]
+[ext_resource path="res://assets/sprites/knife_basic.png" type="Texture" id=12]
+
+[node name="Root" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Backdrop" type="Sprite" parent="."]
+position = Vector2( -0.0919495, 0.353546 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="DJ" type="Sprite" parent="."]
+position = Vector2( 310.361, 16.8369 )
+texture = ExtResource( 3 )
+script = ExtResource( 4 )
+
+[node name="Speaker" type="Sprite" parent="."]
+position = Vector2( 64.1984, 43.7858 )
+texture = ExtResource( 5 )
+script = ExtResource( 6 )
+
+[node name="Speaker2" type="Sprite" parent="."]
+position = Vector2( 164.686, 42.002 )
+texture = ExtResource( 5 )
+script = ExtResource( 6 )
+
+[node name="Speaker3" type="Sprite" parent="."]
+position = Vector2( 460.204, 44.3804 )
+texture = ExtResource( 5 )
+script = ExtResource( 6 )
+
+[node name="Speaker4" type="Sprite" parent="."]
+position = Vector2( 561.881, 44.975 )
+texture = ExtResource( 5 )
+script = ExtResource( 6 )
+
+[node name="customer_basic2" type="Sprite" parent="."]
+position = Vector2( 285.836, 207.302 )
+texture = ExtResource( 7 )
+script = ExtResource( 8 )
+
+[node name="chef_basic" type="Sprite" parent="."]
+position = Vector2( 68.9828, 199.144 )
+texture = ExtResource( 10 )
+
+[node name="knife_basic" type="Sprite" parent="."]
+position = Vector2( 26.6101, 191.73 )
+texture = ExtResource( 12 )
+
+[node name="chef_basic3" type="Sprite" parent="."]
+position = Vector2( 68.9828, 199.144 )
+texture = ExtResource( 10 )
+script = ExtResource( 11 )
+
+[node name="knife_basic3" type="Sprite" parent="."]
+position = Vector2( 26.6101, 191.73 )
+texture = ExtResource( 12 )
+
+[node name="chef_basic2" type="Sprite" parent="."]
+position = Vector2( 578.267, 190.913 )
+texture = ExtResource( 10 )
+
+[node name="knife_basic2" type="Sprite" parent="."]
+position = Vector2( 620.693, 187.024 )
+scale = Vector2( -1, 1 )
+texture = ExtResource( 12 )
+
+[node name="waiter_basic" type="Sprite" parent="."]
+position = Vector2( 208.803, 269.755 )
+texture = ExtResource( 9 )
+
+[node name="waiter_basic2" type="Sprite" parent="."]
+position = Vector2( 436.492, 275.765 )
+texture = ExtResource( 9 )
